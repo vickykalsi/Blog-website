@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+  <div class="flexbox-container2">
+    <div class="viewPageContainer">
+      <% if(titles.length==0) { %>
+        <h2>No Saved Blogs as of now...</h2>
+        <% } else { %>
+          <% for(let i=0;i<titles.length;i++) { %>
+            <h3 class="lexend">Title : <%= titles[i] %>
+            </h3>
+            <p class="neuton"><span class="underlined">Content : </span><%= blogs[i] %>
+            </p>
+            <hr>
+            <% } %>
+              <% } %>
+    </div>
+  </div>
+  <%- include("partials/footer.ejs") %>

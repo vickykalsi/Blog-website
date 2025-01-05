@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+  <div class="flexbox-container">
+    <div class="generalPurposeContainer lexend">
+      <form action="/delete-a-post" method="post">
+        <p>Enter the title of the blog to be deleted</p>
+        <input type="text" name="title"><br><br>
+        <button class="lexend">Delete</button>
+      </form>
+    </div>
+  </div>
+<%- include("partials/footer.ejs") %>

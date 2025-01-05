@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+  <div class="flexbox-container">
+    <div class="generalPurposeContainer lexend">
+      <form action="/update-a-post" method="post">
+        <p>Enter the title of blog and updated content</p><br>
+        <input type="text" name="title"><br><br>
+        <label for="blog">body : </label>
+        <textarea name="blog" id="blog"></textarea><br><br>
+        <button class="lexend">Save</button>
+      </form>
+    </div>
+  </div>
+<%- include("partials/footer.ejs") %>
